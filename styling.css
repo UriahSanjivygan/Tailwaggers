@@ -9,9 +9,23 @@ body {
 }
 
 .text-center {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
-}   
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.itemname {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
 .container-fluid {
     padding: 0;
 }
