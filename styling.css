@@ -8,6 +8,10 @@ body {
     background-color: #f7f7f4;
 }
 
+.text-center {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}   
 .container-fluid {
     padding: 0;
 }
@@ -34,10 +38,10 @@ body {
 
 .dogsPark {
     display: block;
-        margin-left: auto;
-        margin-right: auto;
-        height: auto;
-        width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 40%;
 }
 
 
