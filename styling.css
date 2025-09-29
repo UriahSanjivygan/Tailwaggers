@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    
 }
 
 body {
@@ -17,13 +18,74 @@ body {
     font-size: 36px;
 }
 
+.vetprod {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 70%;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.vetprod1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 50%;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .itemname {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: left;
+    color: #333;
+    padding-inline: 50px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.itemname1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     color: #333;
     margin-top: 10px;
     margin-bottom: 20px;
-    font-size: 20px;
+    font-size: 15px;
+}
+
+
+.sparprod {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 70%;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    padding: 
+    5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sparprod1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 55%;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    padding:
+        5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .container-fluid {
@@ -55,11 +117,15 @@ body {
     margin-left: auto;
     margin-right: auto;
     height: auto;
-    width: 40%;
+    width: 50%;
 }
 
-
-
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    text-align: center;
+}
 @media only screen and (max-width:768px) {
 
     /* For tablets: */
