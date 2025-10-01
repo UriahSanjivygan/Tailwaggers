@@ -1,21 +1,99 @@
 * {
     box-sizing: border-box;
-    
+        
 }
 
-body {
+/*body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     background-color: #f7f7f4;
+}*/
+
+        html,
+        body {
+            height: 100%;/* Ensures the html and body elements take full height */
+            margin: 0;/* Removes default body margin */
+            padding: 0;/* Removes default body padding */
+        }
+        
+        body {
+            background-image: url('DogHill.jpg'); /* Specifies the image path */
+            background-size: cover;/* Scales the image to cover the entire background area */
+            background-position: center;/* Centers the image */
+            background-repeat: no-repeat;/* Prevents image repetition */
+            background-attachment: fixed;/* Keeps the background image fixed while scrolling */
+        }
+
+.navbar {
+    margin-bottom: 10px;
+    background-color: #333;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    border-radius: 0;
+    font-size: 18px;
+    padding-right: 15px;
+    padding-left: 25px;
+}
+.navbar-nav li a, .navbar-brand {
+    color: #f10a0a !important;
+}
+.logo {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    align-items: center;
+    padding-left: 150px;
 }
 
 .text-center {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
-    color: #333;
+    color: #f40a0a;
     margin-top: 20px;
     margin-bottom: 20px;
     font-size: 36px;
+}
+
+.container-fluid {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    background-color: #f7f7f4;
+    border-bottom: 5px solid #ddd;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container-fluid1 {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    height: auto;
+}
+.dogsPark {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 50%;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    text-align: center;
+}
+
+.introtext {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    padding-inline: 50px;
 }
 
 .vetprod {
@@ -38,6 +116,17 @@ body {
     width: 50%;
     border: 2px solid #ddd;
     border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.vetprod2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 90%;
+    border: 2px solid #ddd;
+    border-radius: 4px;
     padding: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -45,7 +134,7 @@ body {
 .itemname {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: left;
-    color: #333;
+    color: #f60808;
     padding-inline: 50px;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -55,7 +144,7 @@ body {
 .itemname1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
-    color: #333;
+    color: #f60808;
     margin-top: 10px;
     margin-bottom: 20px;
     font-size: 15px;
@@ -88,45 +177,8 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.container-fluid {
-    padding: 0;
-}
 
-
-.navbar {
-    margin-bottom: 20px;
-    background-color: #ff6f61;
-    border: none;
-    border-radius: 0;
-    font-size: 18px;
-    padding-right: 15px;
-    padding-left: 15px;
-}
-
-
-.logo {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin-left: auto;  
-    margin-right: auto;
-}
-
-.dogsPark {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-    width: 50%;
-}
-
-.column {
-    float: left;
-    width: 33.33%;
-    padding: 10px;
-    text-align: center;
-}
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:640px) and (min-width:481px)  {
 
     /* For tablets: */
     .main {
@@ -146,4 +198,20 @@ body {
     .right {
         width: 100%;
     }
+}
+@media only screen and (max-width:320px) {
+    /* For very small mobile phones: */
+    .menu,
+    .main,
+    .right {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .navbar-nav li a, .navbar-brand {
+        padding-left: 0;
+        text-align: center;
+        padding-right: 0;
+    }
+    
 }
